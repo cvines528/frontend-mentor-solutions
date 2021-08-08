@@ -7,31 +7,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<!-- flex flex-col justify-center items-center object-center -->
+  <div id="container" class="h-screen grid grid-cols-1 md:grid-cols-3 tracking-wide">
+    <div id="order-summary-card" class="h-full col-start-2 py-20 place-self-center items-center md: py-3 px-3">
+      <div id="hero-image" class="">
+        <img src="images/illustration-hero.svg" alt="" srcset="" class="w-full rounded-t-lg">
+      </div>
+      <div id="card-body" class="grid grid-cols-1 justify-items-center px-20 py-10 bg-white rounded-b-lg  shadow-2xl">
+        <div id="order-title">
+          <h1 class="text-xl">Order Summary</h1>
+        </div>
 
-  Order Summary
+        <div id="order-description" class="grid grid-cols-1">
+          <p class="text-center text-sm text-gray-600 pt-2 pb-6 tracking-normal">You can now listen to millions of songs,<br> audioboks, and podcasts on any device <br> anywhere you like!</p>
+        </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <div id="order-item" class="grid grid-cols-3 rounded-lg mb-10">
+            <img src="images/icon-music.svg" alt="" srcset="" class="py-5 pl-5">
+         
+          
+          <div id="plan-pricing"class="py-5 pr-5">
+            <h2 class="md:text-sm tracking-normal text-xs">Annual Plan</h2>
+            <p class="md:text-sm text-gray-600 text-xs">$59.99/year</p>
+          </div>
+          <div id="change-link" class="grid place-content-center">
+            <a href="#" class="text-xs underline text-indigo-800 font-medium">Change</a>
+          </div>
 
-  Annual Plan
-  $59.99/year
+        </div>
 
-  Change
+        <div id="confirmation-bt" class="w-full ">
+          <button class="rounded-lg mb-5 p-3 px-6 w-full text-white shadow-2xl">Proceed to Payment</button>
+        </div>
 
-  Proceed to Payment
-  Cancel Order
+        <div id="cancel">
+          <a href="#" class="text-sm text-gray-700">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Charles Vines, Jr.</a>. -->
   </div>
 </body>
 </html>
